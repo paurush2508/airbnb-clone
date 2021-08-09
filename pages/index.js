@@ -40,24 +40,24 @@ export default function Home({ exploreData, cardData }) {
         </section>
 
         <LargeCard
-          img="https://links.papareact.com/4cj"
+          img="https://images.pexels.com/photos/9102822/pexels-photo-9102822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           title="The Greatest Outdoors"
           description="Wishlists curated by Airbnb"
           buttonText="Get Inspired"
         />
       </main>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch("https://jsonkeeper.com/b/4G1G").then((res) =>
+  const exploreData = await fetch("https://jsonkeeper.com/b/SXCL").then((res) =>
     res.json()
   );
 
-  const cardData = await fetch("https://links.papareact.com/zp1").then((res) =>
+  const cardData = await fetch("https://jsonkeeper.com/b/2Z2G").then((res) =>
     res.json()
   );
 
